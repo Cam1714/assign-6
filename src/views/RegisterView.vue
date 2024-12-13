@@ -1,11 +1,4 @@
 <script setup>
-const handleRegister = () => {
-  if (password.value === (password.value)) {
-    router.push("/movies");
-  } else {
-    alert("Passwords do not match");
-  }
-};
 </script>
 
 <template>
@@ -17,14 +10,12 @@ const handleRegister = () => {
       </div>
       <div class="form-container">
         <h2>Create an Account</h2>
-        <form @submit.prevent="handleRegister">
-          <input type="text" placeholder="Firstname" class="input-field" required>
-          <input type="text" placeholder="Lastname" class="input-field" required>
+          <input type="text" placeholder="First Name" class="input-field" required>
+          <input type="text" placeholder="Last Name" class="input-field" required>
           <input type="email" placeholder="Email" class="input-field" required>
           <input type="password" placeholder="Password" class="input-field" required>
-          <input type="password" placeholder="Re-enter password" class="input-field" required>
+          <input type="rePassword" placeholder="Re-enter password" class="input-field" required>
           <button type="submit" class="button register">Register</button>
-        </form>
       </div>
     </div>
   </div>
